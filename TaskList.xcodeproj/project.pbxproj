@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D42CFD8028100EAF00A51913 /* DataStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42CFD7F28100EAF00A51913 /* DataStoreManager.swift */; };
+		D42CFD8028100EAF00A51913 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42CFD7F28100EAF00A51913 /* StorageManager.swift */; };
 		D4CD4C95281003AF00CB51B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CD4C94281003AF00CB51B2 /* AppDelegate.swift */; };
 		D4CD4C97281003AF00CB51B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CD4C96281003AF00CB51B2 /* SceneDelegate.swift */; };
 		D4CD4C99281003AF00CB51B2 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CD4C98281003AF00CB51B2 /* TaskListViewController.swift */; };
@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D42CFD7F28100EAF00A51913 /* DataStoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStoreManager.swift; sourceTree = "<group>"; };
+		D42CFD7F28100EAF00A51913 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		D4CD4C91281003AF00CB51B2 /* TaskList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4CD4C94281003AF00CB51B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4CD4C96281003AF00CB51B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 		D4CD4CAF28100B8F00CB51B2 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				D42CFD7F28100EAF00A51913 /* DataStoreManager.swift */,
+				D42CFD7F28100EAF00A51913 /* StorageManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -180,7 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D42CFD8028100EAF00A51913 /* DataStoreManager.swift in Sources */,
+				D42CFD8028100EAF00A51913 /* StorageManager.swift in Sources */,
 				D4CD4C9F281003AF00CB51B2 /* TaskList.xcdatamodeld in Sources */,
 				D4CD4C99281003AF00CB51B2 /* TaskListViewController.swift in Sources */,
 				D4CD4C95281003AF00CB51B2 /* AppDelegate.swift in Sources */,
