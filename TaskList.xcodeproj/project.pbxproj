@@ -13,7 +13,6 @@
 		D4CD4C99281003AF00CB51B2 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CD4C98281003AF00CB51B2 /* TaskListViewController.swift */; };
 		D4CD4C9F281003AF00CB51B2 /* TaskList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D4CD4C9D281003AF00CB51B2 /* TaskList.xcdatamodeld */; };
 		D4CD4CA1281003B000CB51B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4CD4CA0281003B000CB51B2 /* Assets.xcassets */; };
-		D4CD4CA4281003B000CB51B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4CD4CA2281003B000CB51B2 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +23,6 @@
 		D4CD4C98281003AF00CB51B2 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
 		D4CD4C9E281003AF00CB51B2 /* TaskList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TaskList.xcdatamodel; sourceTree = "<group>"; };
 		D4CD4CA0281003B000CB51B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D4CD4CA3281003B000CB51B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4CD4CA5281003B000CB51B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,19 +59,10 @@
 			children = (
 				D4CD4CAE28100B8500CB51B2 /* ViewControllers */,
 				D4CD4CAF28100B8F00CB51B2 /* Services */,
-				D4CD4CAB28100B3F00CB51B2 /* Storyboards */,
 				D4CD4CAC28100B4800CB51B2 /* Resources */,
 				D4CD4CAD28100B5300CB51B2 /* App */,
 			);
 			path = TaskList;
-			sourceTree = "<group>";
-		};
-		D4CD4CAB28100B3F00CB51B2 /* Storyboards */ = {
-			isa = PBXGroup;
-			children = (
-				D4CD4CA2281003B000CB51B2 /* LaunchScreen.storyboard */,
-			);
-			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		D4CD4CAC28100B4800CB51B2 /* Resources */ = {
@@ -168,7 +157,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4CD4CA4281003B000CB51B2 /* LaunchScreen.storyboard in Resources */,
 				D4CD4CA1281003B000CB51B2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -189,17 +177,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		D4CD4CA2281003B000CB51B2 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D4CD4CA3281003B000CB51B2 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D4CD4CA6281003B000CB51B2 /* Debug */ = {
