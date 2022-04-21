@@ -6,7 +6,6 @@
 //
 
 import UIKit
-//import CoreData
 
 class TaskListViewController: UITableViewController {
     
@@ -76,21 +75,18 @@ class TaskListViewController: UITableViewController {
     }
     
     private func save(_ taskName: String) {
-        let task = Task(context: StorageManager.shared.persistentContainer.viewContext)
-        task.title = taskName
-        
-        if let indexPath = tableView.indexPathForSelectedRow {
-            let editedTask = taskList[indexPath.row]
-            StorageManager.shared.persistentContainer.viewContext.delete(editedTask)
-            taskList[indexPath.row] = task
-            tableView.deselectRow(at: indexPath, animated: true)
-            tableView.reloadRows(at: [indexPath], with: .automatic)
-        } else {
-            taskList.append(task)
-            let cellIndex = IndexPath(row: taskList.count - 1, section: 0)
-            tableView.insertRows(at: [cellIndex], with: .automatic)
+        guard let indexPath = tableView.indexPathForSelectedRow
+        else {
+            StorageManager.shared.save(taskName, completion: { task in
+                self.taskList.append(task)
+                let cellIndex = IndexPath(row: self.taskList.count - 1, section: 0)
+                self.tableView.insertRows(at: [cellIndex], with: .automatic)
+            })
+            return
         }
         
+        taskList[indexPath.row].title = taskName
+        tableView.reloadRows(at: [indexPath], with: .automatic)
         StorageManager.shared.saveContext()
     }
 }

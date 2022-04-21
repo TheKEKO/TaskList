@@ -47,12 +47,12 @@ class StorageManager {
     }
     
     func delete(_ task: Task) {
-        StorageManager.shared.persistentContainer.viewContext.delete(task)
+        persistentContainer.viewContext.delete(task)
         saveContext()
     }
     
     func save(_ taskName: String, completion: (Task) -> Void) {
-        let task = Task(context: StorageManager.shared.persistentContainer.viewContext)
+        let task = Task(context: persistentContainer.viewContext)
         task.title = taskName
         completion(task)
         saveContext()
