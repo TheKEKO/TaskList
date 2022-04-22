@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D42CFD8028100EAF00A51913 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42CFD7F28100EAF00A51913 /* StorageManager.swift */; };
+		D478309228133A160092E2F0 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D478309128133A160092E2F0 /* AlertController.swift */; };
 		D4CD4C95281003AF00CB51B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CD4C94281003AF00CB51B2 /* AppDelegate.swift */; };
 		D4CD4C97281003AF00CB51B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CD4C96281003AF00CB51B2 /* SceneDelegate.swift */; };
 		D4CD4C99281003AF00CB51B2 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CD4C98281003AF00CB51B2 /* TaskListViewController.swift */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		D42CFD7F28100EAF00A51913 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		D478309128133A160092E2F0 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		D4CD4C91281003AF00CB51B2 /* TaskList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4CD4C94281003AF00CB51B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4CD4C96281003AF00CB51B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,11 +39,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D47830902813392A0092E2F0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D4CD4C9D281003AF00CB51B2 /* TaskList.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		D4CD4C88281003AF00CB51B2 = {
 			isa = PBXGroup;
 			children = (
 				D4CD4C93281003AF00CB51B2 /* TaskList */,
-				D4CD4C9D281003AF00CB51B2 /* TaskList.xcdatamodeld */,
 				D4CD4C92281003AF00CB51B2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				D4CD4CAE28100B8500CB51B2 /* ViewControllers */,
+				D47830902813392A0092E2F0 /* Models */,
 				D4CD4CAF28100B8F00CB51B2 /* Services */,
 				D4CD4CAC28100B4800CB51B2 /* Resources */,
 				D4CD4CAD28100B5300CB51B2 /* App */,
@@ -87,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				D4CD4C98281003AF00CB51B2 /* TaskListViewController.swift */,
+				D478309128133A160092E2F0 /* AlertController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -172,6 +183,7 @@
 				D4CD4C9F281003AF00CB51B2 /* TaskList.xcdatamodeld in Sources */,
 				D4CD4C99281003AF00CB51B2 /* TaskListViewController.swift in Sources */,
 				D4CD4C95281003AF00CB51B2 /* AppDelegate.swift in Sources */,
+				D478309228133A160092E2F0 /* AlertController.swift in Sources */,
 				D4CD4C97281003AF00CB51B2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -4,7 +4,7 @@
 //
 //  Created by Aleksandr F. on 20.04.2022.
 //
- 
+
 import CoreData
 
 class StorageManager {
@@ -13,7 +13,7 @@ class StorageManager {
     
     // MARK: - Core Data stack
     private let persistentContainer: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "CoreDataDemo")
+        let container = NSPersistentContainer(name: "TaskList")
         container.loadPersistentStores { _, error in
             if let error = error as NSError? {
                 fatalError("Unresolved error \(error), \(error.userInfo)")
@@ -56,7 +56,7 @@ class StorageManager {
         viewContext.delete(task)
         saveContext()
     }
-
+    
     // MARK: - Core Data Saving support
     func saveContext() {
         if viewContext.hasChanges {
